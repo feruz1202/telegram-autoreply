@@ -4,7 +4,7 @@ import time
 api_id = 36022953
 api_hash = 'd0da1904b3e98d0c784e7f7730c2cf23'
 
-DEFAULT_REPLY = "Salom! Hozir band man, tez orada javob beraman."
+DEFAULT_REPLY = "Salom! Bu Avto Javob. Hozir band man, tez orada javob beraman."
 
 # Track last time YOU sent a message to each user
 last_active = {}  # user_id: timestamp
