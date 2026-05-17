@@ -10,12 +10,15 @@ client = TelegramClient('session', api_id, api_hash)
 @client.on(events.NewMessage(incoming=True, func=lambda e: e.is_private))
 async def handler(event):
     sender = await event.get_sender()
+    print(f"Message from: {sender.username}, is_bot: {sender.bot}")
     
-    # Ignore bots
     if sender.bot:
+        print("Skipping bot message")
         return
     
+    print("Sending reply...")
     await event.reply(DEFAULT_REPLY)
+    print("Reply sent!")
 
 print("Auto-reply bot is running...")
 client.start()
