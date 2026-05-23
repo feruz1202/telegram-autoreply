@@ -15,7 +15,7 @@ last_active = {}      # tracks when YOU last messaged someone
 last_replied = {}     # tracks when bot last auto-replied to someone
 
 COOLDOWN = 300        # 5 min - if you replied within 5 min, no auto-reply
-REPLY_COOLDOWN = 300  # 5 min - if bot already replied, don't reply again until 5 min passes
+REPLY_COOLDOWN = 1800  # 5 min - if bot already replied, don't reply again until 5 min passes
 
 client = TelegramClient('session', api_id, api_hash)
 
